@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "run": "tsc && ts-node index.ts"
+    "send": "tsc && ts-node lib/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "bitcoinjs-lib": "6.1.5",
-    "bip174": "^2.1.1"
+    "bip174": "^2.1.1",
+    "secp256k1": "^5.0.0",
+    "ecpair": "^2.0.1",
+    "tiny-secp256k1": "^2.2.3"
   }
 }
