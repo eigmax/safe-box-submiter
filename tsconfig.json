@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "allowJs": true,
+    "strict": true,
+    "noEmit": false,
+    "outDir": "lib",
+    "declaration": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },
+
+  "paths": {
+      "@/*": ["./*"]
+  },
+  "include": [
+      "*/*.ts"
+  ],
+  "exclude": [
+      "node_modules/**/*"
+  ]
+}
