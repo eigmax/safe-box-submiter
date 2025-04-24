@@ -9,12 +9,12 @@ const ECPair = ECPairFactory(ecc);
 async function submit() {
     const serializedStakingData = Buffer.concat([
         Buffer.from("6e756c6c", "hex"), // 4 bytes, endianess not applicable to byte array
-        Buffer.from("8943545177806ED17B9F23F0a21ee5948eCaa776", "hex") // 20 bytes, endianess not applicable to byte array
+        Buffer.from("2d091a1939c276293677886792B77EBa59183c97", "hex") // 20 bytes, endianess not applicable to byte array
     ]);
     const script = btcscript.compile([opcodes.OP_RETURN, serializedStakingData]);
     const psbt = new Psbt({ network });
 
-    let funding_amount = 846400; //sat
+    let funding_amount = 805200; //sat
     let locked_amount = 41000;
     let fee = 200;
     let changeAmount = funding_amount - locked_amount - fee;
@@ -34,9 +34,8 @@ async function submit() {
         }
     ]);
 
-    // https://mempool.space/testnet/tx/06a6a1c5eab13172e77aa020bc9b62251f3fa664109fde06d1a1587e96dcbe12
     let utxo = {
-        txid: "359e50fbbe1bedee04c3f7063dd5ed8efdd48fb4957b00808b96d1f4cb3741a5",
+        txid: "c666bcd234c579bc46ebc229a1cc541dcfb9f91822a2c0b3ce88220f23d5e341",
         vout: 2,
         scriptPubKey: "0014485247dee20f4da35a42291f386aed947560bea8",
     };
