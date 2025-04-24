@@ -14,10 +14,11 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "bitcoinjs-lib": "6.1.5",
     "bip174": "^2.1.1",
-    "secp256k1": "^5.0.0",
+    "bitcoinjs-lib": "6.1.5",
     "ecpair": "^2.0.1",
+    "node-fetch": "^2.7.0",
+    "secp256k1": "^5.0.0",
     "tiny-secp256k1": "^2.2.3"
   }
 }
